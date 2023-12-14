@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -99,18 +98,53 @@
 
     /* Additional Features */
     .features {
-      padding: 10px 20px;
-      background-color: #111; /* Dark black background */
+  padding: 10px 20px;
+  background-color: #111; /* Dark black background */
+  text-align: center;
+  margin-top: -20px; /* Move features section upward */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.features-heading-container {
+  text-align: center;
+}
+
+.features h2 {
+  color: #feaa2c; /* Red text color */
+  margin-bottom: 10px; /* Add some spacing between heading and paragraph */
+}
+
+.features p {
+  color: #fff; /* White text color */
+  max-width: 500px; /* Adjust the max-width as needed */
+  font-size: 16px; /* Adjust the font size as needed */
+  margin: 0 auto; /* Center the paragraph */
+}
+
+    /* New Feature Styles */
+    .feature {
+      margin-top: 20px;
+      max-width: 180px; /* Adjust the max-width as needed */
       text-align: center;
-      margin-top: -20px; /* Move features section upward */
     }
 
-    .features h2 {
-      color: #feaa2c; /* Red text color */
+    .feature img {
+      max-width: 100%;
+      height: auto;
+      max-height: 120px;
+      margin-bottom: 10px;
     }
 
-    .features p {
+    .feature h3 {
+      color: #feaa2c; /* Yellow text color */
+      font-size: 16px; /* Adjust the font size as needed */
+    }
+
+    .feature p {
       color: #fff; /* White text color */
+      font-size: 14px; /* Adjust the font size as needed */
     }
 
     /* Career Section */
@@ -154,7 +188,6 @@
       background-color: #111;
       color: #feaa2c; /* Red text color */
       transition: transform 0.3s ease-in-out; /* Add smooth transition for the hover effect */
-      text-decoration: none; /* Remove underlines */
     }
 
     .item img {
@@ -167,8 +200,6 @@
     .item:hover {
       transform: scale(1.1); /* Increase size on hover */
     }
-
-    /* Navigation Arrows */
     .arrows {
       position: absolute;
       top: 66%;
@@ -206,12 +237,12 @@
 <body>
 
 <nav>
-  <a href="index.html" id="logo">GuruTech</a>
+  <a href="#home" id="logo">GuruTech</a>
   <a href="#aboutus">About Us</a>
   <a href="#courses">Courses</a>
   <a href="#career">Career</a>
   <a href="#blog">Blog</a>
-  <a href="signin.html" id="signin">Sign In</a>
+  <a href="signup.html" id="signin">Sign In</a>
 </nav>
 
 <!-- Content below the navbar -->
@@ -227,16 +258,40 @@
 
 <!-- Additional Features -->
 <div class="features">
-  <h2>Our Features</h2>
-  <p>Explore the unique features that make GuruTech exceptional.</p>
-  <!-- Add more features as needed -->
+  <div class="features-heading-container">
+    <h2>Our Features</h2>
+    <p>Explore the unique features that make GuruTech exceptional.</p>
+  </div>
+</div>
+
+<!-- New Features -->
+<div class="features">
+  <div class="feature">
+    <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/images/00b4aa50ad9e3233e50c4a39e3df94f0.png?auto=format%2Ccompress&dpr=1&w=&h=55" alt="Learn Anything Image">
+    <h3>Learn Anything</h3>
+    <p>Explore any interest or trending topic, take prerequisites, and advance your skills</p>
+  </div>
+  <div class="feature">
+    <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/images/73feba6a844effd3a1116ba46b805171.png?auto=format%2Ccompress&dpr=1&w=&h=47" alt="Save Money Image">
+    <h3>Save Money</h3>
+    <p>Spend less money on your learning if you plan to take multiple courses this year</p>
+  </div>
+  <div class="feature">
+    <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/images/52653c8817c0031d547d6df9251e52ef.png?auto=format%2Ccompress&dpr=1&w=&h=55" alt="Flexible Learning Image">
+    <h3>Flexible Learning</h3>
+    <p>Learn at your own pace, move between multiple courses, or switch to a different course</p>
+  </div>
+  <div class="feature">
+    <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/images/54e0e0ac5da4f6184bda8d9a69ebf237.png?auto=format%2Ccompress&dpr=1&w=&h=40" alt="Unlimited Certificates Image">
+    <h3>Unlimited Certificates</h3>
+    <p>Earn a certificate for every learning program that you complete at no additional cost</p>
+  </div>
 </div>
 
 <!-- Career Section -->
 <div class="career">
   <h2>Career Opportunities</h2>
   <p>Join our team and shape the future of education.</p>
-  <!-- Add career-related content as needed -->
 
   <!-- Container and Items -->
   <div class="container">
